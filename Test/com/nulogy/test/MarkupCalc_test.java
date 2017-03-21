@@ -21,15 +21,12 @@ public class MarkupCalc_test extends TestCase {
 	}
 
 	/**
-     * Input 1:
-     * --------
-     * $1299.99
-     * 3 people
-     * food
-     * Output 1: $1591.58
+     * Example 1: 
+     * input: $1299.99, 3 people,food
+     * output: $1591.58
      */
     @Test
-    public void testForThreePersonsAndFood() {
+    public void testWithThreePeopleAndFood() {
     	
     	final double basePrice = 1299.99d;
     	double amount = calculator.calculate(basePrice, 3, Markups.FOOD);
@@ -37,15 +34,12 @@ public class MarkupCalc_test extends TestCase {
     }
     
     /**
-     * Input 2:
-     * --------
-     * $5432.00
-     * 1 person
-     * drugs
-     * Output 2: $6199.81
+     * Example 2: 
+     * input: $5,432.00, 1 person, drugs
+     * output: $6,199.81
      */
     @Test
-    public void testForOnePersonAndDrugs() {
+    public void testWithOnePersonAndDrugs() {
         
     	final double baseAmount = 5432.00d;
         final double amount = calculator.calculate(baseAmount, 1, Markups.PHARMACEUTICALS);
@@ -53,12 +47,9 @@ public class MarkupCalc_test extends TestCase {
     }
 
     /**
-     * Input 3:
-     * --------
-     * $12456.95
-     * 4 people
-     * books
-     * Output 3: $13707.63
+     * Example 3: 
+     * input: $12,456.95, 4 people, books
+     * output: $13,707.63
      */
     @Test
     public void testWithFourPeopleAndBooks() {
