@@ -20,7 +20,7 @@ public class MarkupCalc_test extends TestCase {
 		calculator = new CalculatePrice();
 	}
 
-	/**
+     /**
      * Example 1: 
      * input: $1299.99, 3 people,food
      * output: $1591.58
